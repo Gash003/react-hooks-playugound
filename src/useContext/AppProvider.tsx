@@ -27,11 +27,11 @@ const AppProvider: React.FC = ({children}) => {
     useEffect(() => {
         function fetchData() {
             setTimeout(() => {
-                setAppData({
-                    foo: 'foo',
-                    bar: 'bar',
-                    baz: 'baz',
-                });
+                // setAppData({
+                //     foo: 'foo',
+                //     bar: 'bar',
+                //     baz: 'baz',
+                // });
             }, 2000);
         }
 
