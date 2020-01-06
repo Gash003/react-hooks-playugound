@@ -9,6 +9,7 @@ import PrevProps from './useRef/PrevProps';
 import RefTimer from './useRef/RefTimer';
 import DomRef from './useRef/DomRef';
 import BasicEffect from './useEffect/BasicEffect';
+import LayoutEffect from './useEffect/LayoutEffect';
 import ClassicComponent from './ClassicComponent/ClassicComponent';
 import MemoBasic from './useMemo/MemoBasic';
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         {/* <PrevState></PrevState> */}
         {/* <StaleProps></StaleProps> */}
         {/* <BasicEffect></BasicEffect> */}
+        {/* <LayoutEffect></LayoutEffect> */}
         {/* <MemoBasic></MemoBasic> */}
         {/* <AppContextConsumer></AppContextConsumer> */}
         {/* <DomRef></DomRef> */}

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useReducer } from 'react';
+import React, { useState, useCallback, useMemo, useReducer } from 'react';
 
 export default function MemoBasic() {
     const [a, setA] = useState('a');
@@ -13,7 +13,6 @@ export default function MemoBasic() {
     };
 
     const heavyOutput = heavyComputing(a, b);
-
     
     const onButtonClick = () => {
         setA('A');
@@ -22,7 +21,7 @@ export default function MemoBasic() {
     };
     
     console.log('Render');
-    
+
     return (
       <>
         Output: {heavyOutput}
