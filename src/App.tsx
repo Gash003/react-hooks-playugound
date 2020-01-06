@@ -10,6 +10,7 @@ import RefTimer from './useRef/RefTimer';
 import DomRef from './useRef/DomRef';
 import BasicEffect from './useEffect/BasicEffect';
 import ClassicComponent from './ClassicComponent/ClassicComponent';
+import MemoBasic from './useMemo/MemoBasic';
 
 const App: React.FC = () => {
   const { setAppData } = useAppContext();
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         {/* <PrevState></PrevState> */}
         {/* <StaleProps></StaleProps> */}
         {/* <BasicEffect></BasicEffect> */}
+        {/* <MemoBasic></MemoBasic> */}
         {/* <AppContextConsumer></AppContextConsumer> */}
         {/* <DomRef></DomRef> */}
         {/* <RefTimer></RefTimer> */}

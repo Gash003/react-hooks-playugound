@@ -35,8 +35,12 @@ export default class ClassicComponent extends React.Component<any, {
         return (<>
             <a href="https://reactjs.org/docs/react-component.html">Component lifecycle</a>
             <button onClick={this.toggleChildVisibility}>Toggle Child Visibility</button>
-            {this.state.childVisible && <ClassicChildComponent someProp={this.state.main}></ClassicChildComponent>}
+            {this.state.childVisible && 
+                <ClassicChildComponent someProp={this.state.main}></ClassicChildComponent>
+            }
             <button onClick={this.updateState}>Update Child Props</button>
+            <hr/>
+            {/* <img src="diagram.png" alt="React Lifecycle hooks"/> */}
         </>);
     }
 }

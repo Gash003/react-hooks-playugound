@@ -9,10 +9,9 @@ interface ClassicChildComponentState {
 }
 
 
-// Optimize props updates
 export default class ClassicChildComponent extends React.Component<
-    ClassicChildComponentProps,
-    ClassicChildComponentState
+ClassicChildComponentProps,
+ClassicChildComponentState
 > {
     
     updateState() {
@@ -28,7 +27,7 @@ export default class ClassicChildComponent extends React.Component<
         this.state = {
             ultimateAnswer: 42
         };
-
+        
         this.updateState = this.updateState.bind(this);
     }
 
@@ -36,7 +35,8 @@ export default class ClassicChildComponent extends React.Component<
         console.log('getDerivedStateFromProps() function');
         return null;
     }
-
+    
+    // Optimize props updates
     shouldComponentUpdate(nextProps: ClassicChildComponentProps) {
         console.log('shouldComponentUpdate() function');
         return true;
