@@ -1,17 +1,23 @@
 import React from 'react';
 import './App.css';
-import { useAppContext } from './AppContext/AppProvider';
+import AppContextConsumer from './useContext/AppContextConsumer';
+import StaleProps from './useState/StaleProps';
+import UpadteBailing from './useState/UpdateBailing';
+import PrevProps from './useRef/PrevProps';
+import RefTimer from './useRef/RefTimer';
 
 
 const App: React.FC = () => {
-  const { appValue, appData } = useAppContext();
+  
 
   return (
     <div className="App">
       <header className="App-header">
-        App Value is: {appValue}
-        <br/>
-        App Value is: {JSON.stringify(appData)}
+        {/* <UpadteBailing></UpadteBailing> */}
+        {/* <StaleProps></StaleProps> */}
+        {/* <AppContextConsumer></AppContextConsumer> */}
+        {/* <RefTimer></RefTimer> */}
+        {/* <PrevProps></PrevProps> */}
       </header>
     </div>
   );
